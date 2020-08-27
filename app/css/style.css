@@ -82,6 +82,7 @@ h1.header-title{
   line-height: 16px;
   font-weight: 400;
   /*color: #ffffff;*/  /*Окрашивает ссылки дробдауна*/
+  /*не пушится репозиторий*/
 }
 .navbar ul li a:hover{
   text-decoration: none;
