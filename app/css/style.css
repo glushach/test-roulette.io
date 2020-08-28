@@ -16,8 +16,7 @@
   }
 
 .navbar {
-  padding: 5px 0px 5px 0px;
-  height: 45px;
+  padding: 0px;
 }
 
 .container-pd-0 {
@@ -65,35 +64,49 @@ h1.header-title{
 
 
 /*navbar*/
-.navbar ul li{
-  margin: 0px 16px 0px 0px;
-}
-
-.navbar ul li {
-  background-color: #f5f5f5;
+.navbar ul li a {
+  text-decoration: none;
 }
 .navbar ul li.active a {
+  text-decoration: none;
+  background-color: #f5f5f5;
   color: #3a6988;
 }
 .navbar ul li a{
   display: block;
-  padding: 13px 20px 13px 20px;
+  padding: 0px 20px 0px 20px; /*{padding-right:.5rem;padding-left:.5rem}*/
   font-size: 16px;
-  line-height: 16px;
+  line-height: 45px; /*регулируется высота кнопки меню*/
   font-weight: 400;
-  /*color: #ffffff;*/  /*Окрашивает ссылки дробдауна*/
-  /*не пушится репозиторий*/
+  color: #ffffff;  /*Окрашивает также ссылки дробдауна*/
 }
-.navbar ul li a:hover{
-  text-decoration: none;
+.navbar ul li a:focus,.navbar ul li a:hover {color:#3a6988;text-decoration:none;background-color:#f5f5f5}
+input.form-control{
+  width: 220px !important;
+  padding: 0px 5px !important;
 }
 input.form-control, button.btn{
   padding: 0px 0px 0px 0px;
   height: 24px;
   border-radius: 0;
+  font-size: 12px;
+  line-height: 12px;
+  color: #666666;
 }
 button.btn{
   width: 73px;
+  background-color: #ffffff;
+  border-color: #ffffff;
+  text-transform: uppercase;
+}
+.dropdown-menu{
+  background-color: #3a6988;
+  border-color: #ffffff;
+}
+.dropdown-item:focus,.dropdown-item:hover {color:#3a6988;text-decoration:none;background-color:#f5f5f5}
+.navbar-light .navbar-toggler {
+  border-color: #ffffff;
+  outline-color: #ffffff;
 }
 
 
@@ -101,22 +114,16 @@ button.btn{
   .header address{
     margin-right: 0;
   }
-  .navbar ul li{
-    margin: 0px 0px 0px 0px;
-  }
-  .navbar ul li a{
-    padding: 0px 20px 0px 17px;
-  }
 }
 
 @media(max-width: 767px){
-  .navbar{
+  /* .navbar{
     height: auto;
-  }
+  } */
 }
 
 @media(max-width: 575px){
-  /*header*/
+  /*header, spoiler*/
   .header{
     padding: 0px 0px 0px 0px;
   }
@@ -165,3 +172,4 @@ button.btn{
     display: none;
   }
 }
+
