@@ -181,6 +181,11 @@ button.btn{
   .contact-block .form-input{
     width: 242px; /*244px*/
   }
+  /*footer*/
+  .footer .copyright, .footer .template{
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+  }
 }
 
 @media(max-width: 575px){
