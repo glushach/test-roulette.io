@@ -23,7 +23,7 @@
   background-color: #3a6988;
 }
 
-.container-footer {
+.container-contact {
   background-color: #e8eff4;;
 }
 .spoiler-header{
@@ -109,17 +109,78 @@ button.btn{
   outline-color: #ffffff;
 }
 
+/*Contact*/
+.contact{
+  padding: 28px 0px 21px 0px;
+}
+.contact .contact-divider{
+  height: 1px;
+  background-color: #c0c4c6;
+  margin-bottom: 10px;
+}
+.contact .contact-action, .contact .contact-description, .contact-unsubscribe{
+  font-size: 12px;
+  line-height: 17px;
+  color: #3a6988;
+}
+.contact .contact-action, .contact-unsubscribe{
+  line-height: 12px;
+  color: #98989a;
+}
+.contact .contact-form, .footer .copyright{
+  margin: 0px 0px 0px 10px;  /*margin-left 20px*/
+}
+.contact .contact-item h4{
+  font-size: 20px;
+  line-height: 20px;
+  color: #3a3b3f;
+}
+.contact .contact-block{
+  margin: 10px 0px 16px 0px;;
+}
+.contact-block .form-input, .contact-block .btn-input{
+  width: 242px; /*244px*/
+  height: 23px;
+  outline-color: #ffffff;
+}
+.contact-block .btn-input{
+  width: 33px;/*35px*/
+  border: 1px solid;
+  font-size: 14px;
+  line-height: 14px;
+  color: #000000;
+  margin-left: 9px;
+}
+
+/*Foteer*/
+.footer{
+  padding: 13px 0px;
+}
+.footer .copyright, .footer .template{
+  font-size: 12px;
+  line-height: 12px;
+  color: #ffffff;
+}
+.footer .template{
+  text-align: right;
+  margin: 0px 10px 0px 0px;
+}
 
 @media(max-width: 991px){
+  /*header*/
   .header address{
     margin-right: 0;
+  }
+  /*contact*/
+  .contact .contact-form, .footer .copyright{
+    margin: 0px;
   }
 }
 
 @media(max-width: 767px){
-  /* .navbar{
-    height: auto;
-  } */
+  .contact-block .form-input{
+    width: 242px; /*244px*/
+  }
 }
 
 @media(max-width: 575px){
