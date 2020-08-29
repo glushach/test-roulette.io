@@ -25,7 +25,11 @@
 .spoiler-header{
   display: none;
 }
-
+.divider{
+  height: 1px;
+  background-color: #c0c4c6;
+  margin-bottom: 10px;
+}
 
 /*header*/
 
@@ -97,12 +101,16 @@ button.btn{
   outline-color: #ffffff;
 }
 
-/*Contact*/
-.contact .contact-divider{
-  height: 1px;
-  background-color: #c0c4c6;
-  margin-bottom: 10px;
+/*Content*/
+.content .content-title{
+  font-size: 20px;
+  line-height: 20px;
+  color: #666666;
 }
+aside .widget img{
+  outline: 7px double #000000;
+}
+/*Contact*/
 .contact .contact-action, .contact .contact-description, .contact-unsubscribe{
   font-size: 12px;
   line-height: 17px;
@@ -139,7 +147,7 @@ button.btn{
   padding: 0px 0px 0px 0px;
 }
 
-/*Foteer*/
+/*Foter*/
 .footer .copyright, .footer .template{
   font-size: 12px;
   line-height: 12px;
