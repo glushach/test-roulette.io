@@ -10,27 +10,30 @@ html(lang="en")
     link(rel="stylesheet", href="css/style.css")
   body
     .container-lg
-      header.header
-        .main-header
+      header.header.pt-sm-4.pb-sm-4
+        .main-header.pt-sm-2.pb-sm-2
           .row
             .col-sm-6.col-md-6.col-lg-6
               .header-info
                 h1.header-title Universal College
                 .description Free PSD Website Template
             .col-sm-6.col-md-6.col-lg-6
-              address
-                .header-address Libero | Maecenas | Mauris | Suspendisse<br>
-                .header-contact Tel: xxxxx xxxxxxxxxx | Mail: info@domain.com
-        .spoiler-header
+              address.mt-2.mb-0.mr-lg-4
+                .header-address.mb-sm-3 Libero | Maecenas | Mauris | Suspendisse<br>
+                a.header-contact(href="tel:+0000000000") Tel: xxxxx xxxxxxxxxx | 
+                a.header-contact(href="mailto:info@domain.com") Mail: info@domain.com
+        .spoiler-header.mt-2
           h1.header-title Universal College
           .header-text
-            p.description Free PSD Website Template
-            p.header-address Libero | Maecenas | Mauris | Suspendisse<br>
-            p.header-contact Tel: xxxxx xxxxxxxxxx | Mail: info@domain.com
+            .description.mb-2 Free PSD Website Template
+            address.mb-2
+              .header-address Libero | Maecenas | Mauris | Suspendisse<br>
+              a.header-contact(href="tel:+0000000000") Tel: xxxxx xxxxxxxxxx | 
+              a.header-contact(href="mailto:info@domain.com") Mail: info@domain.com
 
     .container-lg.container-pd-0
-      nav.navbar.navbar-expand-lg.navbar-light
-        button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation") <span class="navbar-toggler-icon"></span>
+      nav.navbar.px-0.py-0.navbar-expand-lg.navbar-light
+        button.navbar-toggler.my-2.my-lg-0(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation") <span class="navbar-toggler-icon"></span>
         .collapse.navbar-collapse#navbarSupportedContent
           ul.navbar-nav.mr-auto
             li.active
@@ -48,9 +51,9 @@ html(lang="en")
                 a.dropdown-item(href="#") Something else here
             li
               a(href="#") Gallery
-          form.form-inline.my-2.my-lg-0
-            input.form-control.mr-sm-2(type="search" placeholder="Search this website..." aria-label="Search" maxlength="25")
-            button.btn.btn-outline-success.my-2.my-sm-0(type="submit") Search
+          form.form-inline
+            input.form-control.my-2.mr-2(type="search" placeholder="Search this website..." aria-label="Search" maxlength="25")
+            button.btn.btn-outline-success.my-2(type="submit") Search
 
     .container-lg
       .hero  gregter
@@ -58,8 +61,8 @@ html(lang="en")
       section.content ergr
 
     .container-lg.container-contact
-      .contact
-        .contact-main
+      .contact.pt-4.pb-3
+        .contact-main.pt-1
           .row.justify-content-center
             .col-12.col-sm-7.col-md-6.col-lg-4
               .contact-item
@@ -69,8 +72,8 @@ html(lang="en")
                   .contact-action Please enter your email to join our mailing list
                   .contact-block
                     form.form-inline
-                      input.form-input(type="text" minlength="4")
-                      button.btn.btn-input.btn-outline-success(type="submit") Go
+                      input.form-input.mr-1.my-2.my-lg-0(type="text" minlength="4")
+                      button.btn.btn-input.btn-outline-success.my-2.my-lg-0(type="submit") Go
                     a(href="#").contact-unsubscribe To unsubsribe please click here »
             .col-12.col-sm-7.col-md-6.col-lg
               .contact-item
@@ -89,7 +92,7 @@ html(lang="en")
                 .contact-description Lacus interdum Lorem ipsum dolor Suspendisse in neque Praesent et eros Lorem ipsum dolor Suspendisse in neque
 
     .container-lg.container-pd-0
-      footer.footer
+      footer.footer.py-3
         .row.justify-content-col-center.justify-content-md-start
           .col-12.col-md-6
             .copyright Copyright © 2013 Domain Name - All Rights Reserved
