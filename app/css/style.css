@@ -30,7 +30,18 @@
   background-color: #c0c4c6;
   margin-bottom: 10px;
 }
-
+.widget {
+  width: 90px;
+  height: 90px;
+  border: 1px solid #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block-img{
+  width: 80px;
+  height: 80px;
+}
 /*header*/
 
 h1.header-title{
@@ -106,6 +117,8 @@ button.btn{
   font-size: 20px;
   line-height: 20px;
   color: #666666;
+  height: 22px; /*обрезка текста*/
+  overflow: hidden; /*обрезка текста*/
 }
 .content .cart{
   max-width: 300px;
@@ -114,23 +127,48 @@ button.btn{
   font-size: 12px;
   line-height: 14px;
   color: #666666;
+  margin-bottom: 18px;
+  height: 114px; /*обрезка текста*/
+  overflow: hidden; /*обрезка текста*/
 }
 .content a.cart-link{
-  font-size: 13px;
-  line-height: 13px;
+  font-size: 16px;
+  line-height: 16px;
   color: #ffffff;
   background-color: #3a6988;
-  padding-right: 30px;
+  padding-right: 22px;
 }
 aside .widget-wrapper{
   max-width: 360px;
   margin: 0 auto;
 }
-aside .widget img{
+/* aside .widget-news{
+  height: 90px;
+} */
+/* aside .widget img, aside .widget-news img{
   outline: 7px double #000000;
+} */
+aside .widget-news h2.content-title, aside .widget-news .cart-description{
+  font-size: 12px;
+  line-height: 12px;
+  color: #050521;
 }
-
-
+aside .widget-news .cart-description{
+  height: 43px;
+  line-height: 14px;
+  color: #666666;
+}
+aside .widget-news h2.content-title{
+  height: 15px;
+}
+aside .widget-news .link-block{
+  max-width: 169px;
+  margin: 0px 0px 0px auto;
+}
+/* aside .widget{
+  display: flex;
+  justify-content: space-between;
+} */
 /*Contact*/
 .contact .contact-item{
   max-width: 310px;
@@ -253,5 +291,6 @@ aside .widget img{
   .header-text{
     display: none;
   }
+  /*Content*/
 }
 
