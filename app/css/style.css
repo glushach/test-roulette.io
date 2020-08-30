@@ -107,10 +107,35 @@ button.btn{
   line-height: 20px;
   color: #666666;
 }
+.content .cart{
+  max-width: 300px;
+}
+.content .cart-description{
+  font-size: 12px;
+  line-height: 14px;
+  color: #666666;
+}
+.content a.cart-link{
+  font-size: 13px;
+  line-height: 13px;
+  color: #ffffff;
+  background-color: #3a6988;
+  padding-right: 30px;
+}
+aside .widget-wrapper{
+  max-width: 360px;
+  margin: 0 auto;
+}
 aside .widget img{
   outline: 7px double #000000;
 }
+
+
 /*Contact*/
+.contact .contact-item{
+  max-width: 310px;
+  margin: 0 auto;
+}
 .contact .contact-action, .contact .contact-description, .contact-unsubscribe{
   font-size: 12px;
   line-height: 17px;
