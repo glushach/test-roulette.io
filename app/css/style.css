@@ -42,8 +42,8 @@
   width: 80px;
   height: 80px;
 }
-/*header*/
 
+/*header*/
 h1.header-title{
   font-size: 32px;
   line-height: 32px;
@@ -127,7 +127,7 @@ button.btn{
   font-size: 12px;
   line-height: 14px;
   color: #666666;
-  margin-bottom: 18px;
+  margin-bottom: 24px;
   height: 114px; /*обрезка текста*/
   overflow: hidden; /*обрезка текста*/
 }
@@ -142,33 +142,27 @@ aside .widget-wrapper{
   max-width: 360px;
   margin: 0 auto;
 }
-/* aside .widget-news{
-  height: 90px;
-} */
-/* aside .widget img, aside .widget-news img{
-  outline: 7px double #000000;
-} */
 aside .widget-news h2.content-title, aside .widget-news .cart-description{
   font-size: 12px;
   line-height: 12px;
   color: #050521;
 }
 aside .widget-news .cart-description{
-  height: 43px;
+  height: 43px; /*обрезка текста*/
+  overflow: hidden; /*обрезка текста*/
   line-height: 14px;
   color: #666666;
 }
 aside .widget-news h2.content-title{
   height: 15px;
+  margin-top: 3px;
 }
 aside .widget-news .link-block{
   max-width: 169px;
-  margin: 0px 0px 0px auto;
 }
-/* aside .widget{
-  display: flex;
-  justify-content: space-between;
-} */
+aside .widget-item{
+  max-width: 230px;
+}
 /*Contact*/
 .contact .contact-item{
   max-width: 310px;
