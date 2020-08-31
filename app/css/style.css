@@ -131,10 +131,11 @@ button.btn{
   width: 160px;
   height: 26px;
   background-color: #3a6988;
+  display: flex;
+  align-items: center;
 }
 .content .cart-link a{
   font-size: 13px;
-  line-height: 13px; /*для центрирования ссылки по вертикали в блоке*/
   color: #ffffff;
 }
 aside .cart-link{
