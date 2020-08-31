@@ -131,12 +131,16 @@ button.btn{
   height: 114px; /*обрезка текста*/
   overflow: hidden; /*обрезка текста*/
 }
-.content a.cart-link{
-  font-size: 16px;
-  line-height: 16px;
-  color: #ffffff;
+.content .cart-link {
+  max-width: 160px;
+  height: 25px;
+  
   background-color: #3a6988;
-  padding-right: 22px;
+}
+.content .cart-link a{
+  font-size: 13px;
+  line-height: 13px;
+  color: #ffffff;
 }
 aside .widget-wrapper{
   max-width: 360px;
@@ -156,9 +160,6 @@ aside .widget-news .cart-description{
 aside .widget-news h2.content-title{
   height: 15px;
   margin-top: 3px;
-}
-aside .widget-news .link-block{
-  max-width: 169px;
 }
 aside .widget-item{
   max-width: 230px;
