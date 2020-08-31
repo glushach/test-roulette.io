@@ -148,7 +148,7 @@ aside .widget-news h2.content-title, aside .widget-news .cart-description{
   color: #050521;
 }
 aside .widget-news .cart-description{
-  height: 43px; /*обрезка текста*/
+  height: 47px; /*обрезка текста*/
   overflow: hidden; /*обрезка текста*/
   line-height: 14px;
   color: #666666;
