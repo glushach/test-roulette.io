@@ -129,12 +129,12 @@ button.btn{
 }
 .content .cart-link {
   width: 160px;
-  height: 25px;
+  height: 26px;
   background-color: #3a6988;
 }
 .content .cart-link a{
   font-size: 13px;
-  line-height: 25px; /*для центрирования ссылки по вертикали в блоке*/
+  line-height: 13px; /*для центрирования ссылки по вертикали в блоке*/
   color: #ffffff;
 }
 aside .cart-link{
