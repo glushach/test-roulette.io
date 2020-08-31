@@ -134,7 +134,7 @@ button.btn{
 }
 .content .cart-link a{
   font-size: 13px;
-  line-height: 13px;
+  line-height: 25px; /*для центрирования ссылки по вертикали в блоке*/
   color: #ffffff;
 }
 aside .cart-link{
