@@ -55,15 +55,50 @@ html(lang="en")
             input.form-control.my-2.mr-2(type="search" placeholder="Search this website..." aria-label="Search" maxlength="25")
             button.btn.btn-outline-success.my-2(type="submit") Search
 
-    .container-xl
-      .hero  gregte Рефакторинг 17:57 31 автуста
+    .wrapper-slider
+      .slider.slider-for.mx-auto
+        div
+          img(src="img/960of270px.png", alt="").img-fluid
+          a(href="#") » Link Text Goes Here
+        div
+          img(src="img/960of270green.png", alt="").img-fluid
+          a(href="#") » Link Text Goes Here
+        div
+          img(src="img/960of270red.png", alt="").img-fluid
+          a(href="#") » Link Text Goes Here
+        div
+          img(src="img/960of270yellow.png", alt="").img-fluid
+          a(href="#") » Link Text Goes Here
+      .slider.slider-nav.mx-auto
+        .item
+          img(src="img/225of80px.png", alt="").img-fluid
+          .slider-link
+            a(href="#") » Link Text Goes Here
+        .item
+          img(src="img/225of80green.png", alt="").img-fluid
+          .slider-link
+            a(href="#") » Link Text Goes Here
+        .item
+          img(src="img/225of80red.png", alt="").img-fluid
+          .slider-link
+            a(href="#") » Link Text Goes Here
+        .item
+          img(src="img/225of80yellow.png", alt="").img-fluid
+          .slider-link
+            a(href="#") » Link Text Goes Here
 
-      .content.pt-3.mt-2
+
+
+
+
+
+
+      .container-xl.content.pt-3.mt-2
         .row
-          .col-md-7.col-lg-8
+          .col-md-12.col-lg-8
             main.main-content
               .row
-                .col-md-12.col-lg-6
+                .col-md-6
                   article.cart.mb-4.pb-1.mx-auto
                     h2.content-title Indonectetus facilis leo nibh
                     .divider
@@ -73,7 +108,7 @@ html(lang="en")
                       p Condimentumfelis et amet tellent quisquet a leo lacus nec augue accumsan. Sagittislaorem dolor ipsum at urna et pharetium malesuada nis consectus odio.
                     .cart-link
                       a(href="#").pl-2 Continue Reading »
-                .col-md-12.col-lg-6
+                .col-md-6
                   article.cart.mb-4.pb-1.mx-auto
                     h2.content-title Indonectetus facilis leo nibh
                     .divider
@@ -83,7 +118,7 @@ html(lang="en")
                       p Condimentumfelis et amet tellent quisquet a leo lacus nec augue accumsan. Sagittislaorem dolor ipsum at urna et pharetium malesuada nis consectus odio.
                     .cart-link
                       a(href="#").pl-2 Continue Reading »
-                .col-md-12.col-lg-6
+                .col-md-6
                   article.cart.mb-4.pb-1.mx-auto
                     h2.content-title Indonectetus facilis leo nibh
                     .divider
@@ -93,7 +128,7 @@ html(lang="en")
                       p Condimentumfelis et amet tellent quisquet a leo lacus nec augue accumsan. Sagittislaorem dolor ipsum at urna et pharetium malesuada nis consectus odio.
                     .cart-link
                       a(href="#").pl-2 Continue Reading »
-                .col-md-12.col-lg-6
+                .col-md-6
                   article.cart.mb-4.pb-1.mx-auto
                     h2.content-title Indonectetus facilis leo nibh
                     .divider
@@ -104,13 +139,14 @@ html(lang="en")
                     .cart-link
                       a(href="#").pl-2 Continue Reading »
           //- Right sidebar
-          .col-md-5.col-lg-4
+          .col-md-12.col-lg-4
             aside.mb-4.pb-1
               .widget-wrapper
                 .row
                   .col-12
                     h2.content-title Ametorci Phasellus
                     .divider
+                    //- Card
                     article.widget-news.mt-1.mb-3
                       .row.no-gutters.d-flex.flex-nowrap
                         .col-4.col-md-4
@@ -171,8 +207,6 @@ html(lang="en")
                     .row
                       .col-12
                         .divider
-
-
                 .row.mt-3
                   .col
                     h2.content-title Ametorci Phasellus
@@ -211,7 +245,34 @@ html(lang="en")
                           img(src="img/80of80px.png", alt="#").img-fluid.d-block.mx-auto
 
 
-              
+        //- .row
+        //-   .col-md-6.col-lg-6
+        //-     article.cart.mb-4.pb-1.mx-auto
+        //-       h2.content-title Indonectetus facilis leo nibh
+        //-       .divider
+        //-       img(src="img/300of150px.png", alt="#").cart-img.img-fluid.img-fluid.mt-2.mb-3
+        //-       .cart-description
+        //-         p Morbitincidunt maurisque eros molest nunc anteget sed vel lacus mus semper. Anter dumnullam interdum eros dui urna consequam ac nisl nullam ligula vestassa.
+        //-         p Condimentumfelis et amet tellent quisquet a leo lacus nec augue accumsan. Sagittislaorem dolor ipsum at urna et pharetium malesuada nis consectus odio.
+        //-       .cart-link
+        //-         a(href="#").pl-2 Continue Reading »
+        //-   .col-md-6.col-lg-6
+        //-     article.cart.mb-4.pb-1.mx-auto
+        //-       h2.content-title Indonectetus facilis leo nibh
+        //-       .divider
+        //-       img(src="img/300of150px.png", alt="#").cart-img.img-fluid.img-fluid.mt-2.mb-3
+        //-       .cart-description
+        //-         p Morbitincidunt maurisque eros molest nunc anteget sed vel lacus mus semper. Anter dumnullam interdum eros dui urna consequam ac nisl nullam ligula vestassa.
+        //-         p Condimentumfelis et amet tellent quisquet a leo lacus nec augue accumsan. Sagittislaorem dolor ipsum at urna et pharetium malesuada nis consectus odio.
+        //-       .cart-link
+        //-         a(href="#").pl-2 Continue Reading »
+
+
+
+
+
+
+
 
 
 
@@ -259,4 +320,5 @@ html(lang="en")
             .template Template by OS Templates
     script(src="js/jquery-3.5.1.min.js")
     script(src="js/bootstrap.min.js")
+    script(src="js/slick.min.js")
     script(src="js/script.js")

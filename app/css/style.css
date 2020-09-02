@@ -43,6 +43,22 @@
   height: 80px;
 }
 
+
+/*my Slick Slider class*/
+
+.wrapper-slider .slider{
+  overflow: hidden; /*Очень ВАЖНЫЙ. Без него длина горизонтального скрола равна 20000px*/
+  max-width: 960px;
+}
+.wrapper-slider .slider-nav .item{
+  width: 225px;
+  margin-right: 20px;
+}
+/*Сгенерированные классы плагином Slick slide Syncing*/
+.slick-track{
+  display: flex; /*Очень ВАЖНЫЙ. Без него слайды не выстроены в строку*/
+}
+
 /*header*/
 h1.header-title{
   font-size: 32px;
@@ -218,6 +234,13 @@ aside .widget-item{
   .contact .contact-form, .footer .copyright{
     margin: 0px;
   }
+  /*Slick slider*/
+  .wrapper-slider .slider{
+    max-width: 710px;
+  }
+  .wrapper-slider .slider-nav .item{
+    margin-right: 17.5px;
+  }
 }
 
 @media(max-width: 767px){
@@ -229,6 +252,13 @@ aside .widget-item{
     text-align: center;
     margin: 0px 0px 0px 0px;
   }
+    /*Slick slider*/
+    .wrapper-slider .slider{
+      max-width: 546px;
+    }
+    .wrapper-slider .slider-nav .item{
+      margin-right: 96px;
+    }
 }
 
 @media(max-width: 575px){
@@ -283,6 +313,16 @@ aside .widget-item{
   .header-text{
     display: none;
   }
-  /*Content*/
+
+
+
+/*Slider*/
+  .wrapper-slider .slider{
+    max-width: 290px;
+  }
+  .wrapper-slider .slider-nav .item{
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
