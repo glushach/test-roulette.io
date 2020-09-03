@@ -18,7 +18,7 @@ $(document).ready(function(){
     draggable: false,
     swipe: false,
     variableWidth: true,
-    fade: true,
+    // fade: true,  //делает поломку
     responsive: [
       {
         breakpoint: 576,
