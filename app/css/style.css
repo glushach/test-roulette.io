@@ -22,9 +22,6 @@
 .container-contact {
   background-color: #e8eff4;;
 }
-.spoiler-header{
-  display: none;
-}
 .divider{
   height: 1px;
   background-color: #c0c4c6;
@@ -82,8 +79,10 @@
 }
 
 /*header*/
-.main-header{
+.header-wrapper{
   display: block;
+  line-height: 14px;
+  margin-bottom: -16px; /*убирает пустое пространство после смещенния .header address вверх на 119%*/
 }
 h1.header-title{
   font-size: 32px;
@@ -105,11 +104,6 @@ h1.header-title{
   line-height: 12px;
   color: #666666;
 }
-.header-contact{
-  line-height: 14px;
-  margin-bottom: -16px; /*убирает пустое пространство после смещенния .header address вверх на 119%*/
-}
-
 
 /*navbar*/
 .navbar ul li a {
@@ -290,6 +284,12 @@ aside .widget-item{
 
 @media(max-width: 575px){
   /*header, spoiler*/
+  .header-wrapper{
+    margin: 0; /*также убирает отрицательный марджин после отмены смещенния .header address*/
+    line-height: 19px;
+    display: none;  /*Контент спойлера изнапчально должен быть скрыт*/
+  }
+
   .header address{
     text-align: left;
     transform: translateY(0);
@@ -298,18 +298,10 @@ aside .widget-item{
   .header{
     padding: 0px 0px 0px 0px;
   }
-  
-  .spoiler-header{
-    display: block;
-  }
-  .header-contact{
-    margin: 0; /*также убирает отрицательный марджин после отмены смещенния .header address*/
-    line-height: 19px;
-  }
+
   h1.header-title{
     position: relative;
     padding: 0px 0px 0px 30px;
-    cursor: pointer;
   }
   h1.header-title::before, h1.header-title::after{
     content: '';
@@ -337,9 +329,6 @@ aside .widget-item{
   h1.header-title.active::after{
     transform: rotate(40deg);
   }
-  .header-text{
-    display: none;
-  }
 
 /*Slider*/
   .wrapper-slider .slider{
@@ -351,8 +340,8 @@ aside .widget-item{
   }
   .wrapper-slider .slider-for .slider-link{
     padding-left: 0;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 14px;
     justify-content: center;
     height: 40px;
   }

@@ -1,7 +1,7 @@
 $(document).ready(function(){
   //Spoiler
   $('.header-title').click(function(event){
-    $(this).toggleClass('active').next().slideToggle(300);
+    $(this).toggleClass('active').next().toggleClass('header-wrapper');
   });
   //Slider
   $('.slider-for').slick({
