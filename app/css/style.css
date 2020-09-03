@@ -45,6 +45,9 @@
 
 
 /*my Slick Slider class*/
+.wrapper-slider{
+  margin-top: 33px;
+}
 
 .wrapper-slider .slider{
   overflow: hidden; /*Очень ВАЖНЫЙ. Без него длина горизонтального скрола равна 20000px*/
@@ -54,12 +57,34 @@
   width: 225px;
   margin-right: 20px;
 }
+.wrapper-slider .slider-for .slider-link, .wrapper-slider .slider-nav .slider-link{
+  height: 50px;
+  background-color: #3a6988;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  font-size: 26px;
+  line-height: 26px;
+  color: #3a3b3f;
+}
+.wrapper-slider .slider-nav .slider-link{
+  height: 30px;
+  padding-left: 32px;
+}
+.wrapper-slider .slider-nav .slider-link a {
+  font-size: 12px;
+  line-height: 12px;
+  color: #ffffff;
+}
 /*Сгенерированные классы плагином Slick slide Syncing*/
 .slick-track{
   display: flex; /*Очень ВАЖНЫЙ. Без него слайды не выстроены в строку*/
 }
 
 /*header*/
+.main-header{
+  display: block;
+}
 h1.header-title{
   font-size: 32px;
   line-height: 32px;
@@ -72,6 +97,7 @@ h1.header-title{
 }
 
 .header address{
+  transform: translateY(-119%);
   text-align: right;
 }
 .header-address, .header-contact{
@@ -81,6 +107,7 @@ h1.header-title{
 }
 .header-contact{
   line-height: 14px;
+  margin-bottom: -16px; /*убирает пустое пространство после смещенния .header address вверх на 119%*/
 }
 
 
@@ -265,18 +292,18 @@ aside .widget-item{
   /*header, spoiler*/
   .header address{
     text-align: left;
+    transform: translateY(0);
   }
+
   .header{
     padding: 0px 0px 0px 0px;
   }
-  .main-header{
-    display: none;
-  }
+  
   .spoiler-header{
     display: block;
   }
   .header-contact{
-    margin: 0;
+    margin: 0; /*также убирает отрицательный марджин после отмены смещенния .header address*/
     line-height: 19px;
   }
   h1.header-title{
@@ -314,8 +341,6 @@ aside .widget-item{
     display: none;
   }
 
-
-
 /*Slider*/
   .wrapper-slider .slider{
     max-width: 290px;
@@ -323,6 +348,13 @@ aside .widget-item{
   .wrapper-slider .slider-nav .item{
     margin-right: auto;
     margin-left: auto;
+  }
+  .wrapper-slider .slider-for .slider-link{
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 16px;
+    justify-content: center;
+    height: 40px;
   }
 }
 

@@ -3,6 +3,7 @@ $(document).ready(function(){
   $('.header-title').click(function(event){
     $(this).toggleClass('active').next().slideToggle(300);
   });
+  //Slider
   $('.slider-for').slick({
     asNavFor: '.slider-nav',
     arrows: false,
@@ -17,6 +18,7 @@ $(document).ready(function(){
     draggable: false,
     swipe: false,
     variableWidth: true,
+    fade: true,
     responsive: [
       {
         breakpoint: 576,

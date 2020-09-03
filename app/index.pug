@@ -10,26 +10,16 @@ html(lang="en")
     link(rel="stylesheet", href="css/style.css")
   body
     .container-xl
-      header.header.pt-sm-4.pb-sm-4
-        .main-header.pt-sm-2.pb-sm-2
-          .row
-            .col-sm-6.col-md-6.col-lg-6
-              .header-info
-                h1.header-title Universal College
-                .description Free PSD Website Template
-            .col-sm-6.col-md-6.col-lg-6
-              address.mt-2.mb-0.mr-lg-4
-                .header-address.mb-sm-3 Libero | Maecenas | Mauris | Suspendisse<br>
-                a.header-contact(href="tel:+0000000000") Tel: xxxxx xxxxxxxxxx | 
-                a.header-contact(href="mailto:info@domain.com") Mail: info@domain.com
-        .spoiler-header.mt-2
+      header.header.mt-2.pt-sm-4
+        .spoiler-header.main-header
           h1.header-title Universal College
-          .header-text
-            .description.mb-2 Free PSD Website Template
-            address.mb-2
-              .header-address Libero | Maecenas | Mauris | Suspendisse<br>
+          .header-contact
+            .description Free PSD Website Template
+            address.mt-2.mb-0.mr-lg-4
+              .header-address.mb-sm-3 Libero | Maecenas | Mauris | Suspendisse<br>
               a.header-contact(href="tel:+0000000000") Tel: xxxxx xxxxxxxxxx | 
               a.header-contact(href="mailto:info@domain.com") Mail: info@domain.com
+
 
     .container-xl.container-pd-0
       nav.navbar.px-0.py-0.navbar-expand-lg.navbar-light
@@ -56,33 +46,37 @@ html(lang="en")
             button.btn.btn-outline-success.my-2(type="submit") Search
 
     .wrapper-slider
-      .slider.slider-for.mx-auto
+      .slider.slider-for.mx-auto.mb-3
         div
-          img(src="img/960of270px.png", alt="").img-fluid
-          a(href="#") » Link Text Goes Here
+          img(data-lazy="img/960of270px.png", alt="").img-fluid
+          div
+            .slider-link Cursus penati saccum ut curabitur nulla.
         div
-          img(src="img/960of270green.png", alt="").img-fluid
-          a(href="#") » Link Text Goes Here
+          img(data-lazy="img/960of270green.png", alt="").img-fluid
+          div
+            .slider-link Cursus penati saccum ut curabitur nulla.
         div
-          img(src="img/960of270red.png", alt="").img-fluid
-          a(href="#") » Link Text Goes Here
+          img(data-lazy="img/960of270red.png", alt="").img-fluid
+          div
+            .slider-link Cursus penati saccum ut curabitur nulla.
         div
-          img(src="img/960of270yellow.png", alt="").img-fluid
-          a(href="#") » Link Text Goes Here
+          img(data-lazy="img/960of270yellow.png", alt="").img-fluid
+          div
+            .slider-link Cursus penati saccum ut curabitur nulla.
       .slider.slider-nav.mx-auto
-        .item
+        .item.mt-1
           img(src="img/225of80px.png", alt="").img-fluid
           .slider-link
             a(href="#") » Link Text Goes Here
-        .item
+        .item.mt-1
           img(src="img/225of80green.png", alt="").img-fluid
           .slider-link
             a(href="#") » Link Text Goes Here
-        .item
+        .item.mt-1
           img(src="img/225of80red.png", alt="").img-fluid
           .slider-link
             a(href="#") » Link Text Goes Here
-        .item
+        .item.mt-1
           img(src="img/225of80yellow.png", alt="").img-fluid
           .slider-link
             a(href="#") » Link Text Goes Here
@@ -93,7 +87,7 @@ html(lang="en")
 
 
 
-      .container-xl.content.pt-3.mt-2
+      .container-xl.content.pt-3.mt-3
         .row
           .col-md-12.col-lg-8
             main.main-content
@@ -243,34 +237,6 @@ html(lang="en")
                       .block-img
                         a(href="#")
                           img(src="img/80of80px.png", alt="#").img-fluid.d-block.mx-auto
-
-
-        //- .row
-        //-   .col-md-6.col-lg-6
-        //-     article.cart.mb-4.pb-1.mx-auto
-        //-       h2.content-title Indonectetus facilis leo nibh
-        //-       .divider
-        //-       img(src="img/300of150px.png", alt="#").cart-img.img-fluid.img-fluid.mt-2.mb-3
-        //-       .cart-description
-        //-         p Morbitincidunt maurisque eros molest nunc anteget sed vel lacus mus semper. Anter dumnullam interdum eros dui urna consequam ac nisl nullam ligula vestassa.
-        //-         p Condimentumfelis et amet tellent quisquet a leo lacus nec augue accumsan. Sagittislaorem dolor ipsum at urna et pharetium malesuada nis consectus odio.
-        //-       .cart-link
-        //-         a(href="#").pl-2 Continue Reading »
-        //-   .col-md-6.col-lg-6
-        //-     article.cart.mb-4.pb-1.mx-auto
-        //-       h2.content-title Indonectetus facilis leo nibh
-        //-       .divider
-        //-       img(src="img/300of150px.png", alt="#").cart-img.img-fluid.img-fluid.mt-2.mb-3
-        //-       .cart-description
-        //-         p Morbitincidunt maurisque eros molest nunc anteget sed vel lacus mus semper. Anter dumnullam interdum eros dui urna consequam ac nisl nullam ligula vestassa.
-        //-         p Condimentumfelis et amet tellent quisquet a leo lacus nec augue accumsan. Sagittislaorem dolor ipsum at urna et pharetium malesuada nis consectus odio.
-        //-       .cart-link
-        //-         a(href="#").pl-2 Continue Reading »
-
-
-
-
-
 
 
 
